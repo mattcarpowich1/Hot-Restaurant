@@ -23,9 +23,71 @@
 				
 			</button>
 		</div>
+			<div class="row">
+			 <div class="col-md-12">
+			   <div class=" panel panel-default">
+			     <div class="panel-heading">Current Reservations</div>
+			       <div class="panel-body">
+			         <table class="table">
+			           <thead>
+			             <tr>
+			               
+			             </tr>
+			           </thead>
+			           <tbody id="currentReservations">
+			             
+			           </tbody>
+			         </table>
+			       </div>
+			   </div>
+			 </div>
+			</div>
 
-		<a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a>
 
-	</div>
+			<div class="row">
+			 <div class="col-md-12">
+			   <div class=" panel panel-default">
+			     <div class="panel-heading">Wait List</div>
+			       <div class="panel-body">
+			         <table class="table">
+			           <thead>
+			             <tr>
+			               
+			             </tr>
+			           </thead>
+			           <tbody id="waitList">
+			             <tr>
+			               <td></td>
+			               <td></td>
+			               <td></td>
+			               <td></td>
+			             </tr>
+			           </tbody>
+			         </table>
+			       </div>
+			   </div>
+			 </div>
+			</div>
+
+    	<a href="">API Table Link</a> | <a href="">API Wait List</a>
+
+    </div>
+
+    <script type="text/javascript">
+        var reservations = [];
+        var waitList = [];
+
+        $.get('/api/table').done(function(data) {
+					console.log(data);
+					// alert("adding reservation");
+					if (reservations.length < 6) {
+					  reservations.push()
+					} else {
+						waitList.push()
+					}
+       	});
+
+
+    </script>
 </body>
 </html>
