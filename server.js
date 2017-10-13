@@ -37,7 +37,7 @@ app.get("/api/waitlist", function(req, res) {
 });
 
 app.post("/api/reserve", function(req, res) {
-	// Reservations.reservations.push(req.body);
+	Reservations.reservations.push(req.body);
 });
 
 
